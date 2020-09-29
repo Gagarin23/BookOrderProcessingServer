@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace TransferObjects
+﻿namespace TransferObjects
 {
     public class ExcelReaderTemplate
     {

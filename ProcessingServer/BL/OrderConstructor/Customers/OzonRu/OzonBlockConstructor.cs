@@ -70,7 +70,7 @@ namespace ProcessingServer.BL.OrderConstructor.Customers.OzonRu
         /// <param name="blocks"></param>
         private void SetImposeAndSheetFormat(IEnumerable<Block> blocks)
         {
-            foreach (var block in blocks) 
+            foreach (var block in blocks)
                 block.SheetFormat = block.SetSheetFormat(block.BookMount, block.BookFormat);
         }
     }

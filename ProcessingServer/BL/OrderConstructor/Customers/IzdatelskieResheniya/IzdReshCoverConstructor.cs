@@ -20,7 +20,7 @@ namespace ProcessingServer.BL.OrderConstructor.Customers.IzdatelskieResheniya
             var orderPath = Directory.GetParent(excelPath)?.ToString();
             _exTemplate = excelReaderTemplate;
             FilesArray = Directory.GetFiles(orderPath
-                                            ?? throw new InvalidOperationException($"{nameof(orderPath)} {MethodBase.GetCurrentMethod()?.Name}"), 
+                                            ?? throw new InvalidOperationException($"{nameof(orderPath)} {MethodBase.GetCurrentMethod()?.Name}"),
                                             "*.pdf", SearchOption.AllDirectories);
         }
 
@@ -50,7 +50,7 @@ namespace ProcessingServer.BL.OrderConstructor.Customers.IzdatelskieResheniya
                && row[_exTemplate.Imposition] is double imposition)
             {
 
-                if(path != null)
+                if (path != null)
                     return new Cover()
                     {
                         Isbn = Path.GetFileNameWithoutExtension(path),

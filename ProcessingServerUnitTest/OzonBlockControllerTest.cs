@@ -1,14 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Newtonsoft.Json;
-using ProcessingServer.BL.NetWork;
+﻿using Newtonsoft.Json;
 using ProcessingServer.BL.OrderConstructor;
 using ProcessingServer.BL.OrderConstructor.Customers.OzonRu;
-using ProcessingServer.Controllers;
 using TransferObjects;
 using Xunit;
 

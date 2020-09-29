@@ -1,9 +1,9 @@
-﻿using System.Collections.Generic;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using ProcessingServer.BL.NetWork;
 using ProcessingServer.BL.OrderConstructor.Interfaces;
 using ProcessingServer.Configs;
 using ProcessingServer.Controllers;
+using System.Collections.Generic;
 using TransferObjects;
 
 namespace ProcessingServer.BL.OrderConstructor.Customers.OzonRu

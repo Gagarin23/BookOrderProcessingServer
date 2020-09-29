@@ -34,7 +34,7 @@ namespace ProcessingServer.BL.OrderConstructor.Customers.OzonRu
         /// <returns></returns>
         private Cover CoverConstructor(DataRow row)
         {
-            if(row[_exTemplate.Isbn] is string isbn
+            if (row[_exTemplate.Isbn] is string isbn
                && row[_exTemplate.Name] is string name
                && row[_exTemplate.BookFormat] is string bookFormat
                && row[_exTemplate.Lamination] is string lamination
@@ -54,9 +54,9 @@ namespace ProcessingServer.BL.OrderConstructor.Customers.OzonRu
                     PrintСoefficient = 1.11
                 };
             }
-            else if(row[_exTemplate.Isbn] is string lostIsbn)
+            else if (row[_exTemplate.Isbn] is string lostIsbn)
             {
-                return new Cover() { Isbn = lostIsbn, PrintСoefficient = 0};
+                return new Cover() { Isbn = lostIsbn, PrintСoefficient = 0 };
             }
 
             return new Cover() { Isbn = $"Не удалось прочесть isbn строки №{row.ItemArray[0]}", PrintСoefficient = 0 };

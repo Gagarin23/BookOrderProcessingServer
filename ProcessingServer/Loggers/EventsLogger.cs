@@ -55,7 +55,7 @@ namespace ProcessingServer.Loggers
             if (!File.Exists(logFilePath))
                 try
                 {
-                    Directory.CreateDirectory(Directory.GetParent(logFilePath)?.ToString() 
+                    Directory.CreateDirectory(Directory.GetParent(logFilePath)?.ToString()
                                               ?? throw new InvalidOperationException($"{nameof(logFilePath)} {MethodBase.GetCurrentMethod()?.Name}"));
                     var fs = File.Create(logFilePath);
                     fs.Dispose();

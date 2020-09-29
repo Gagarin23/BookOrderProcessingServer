@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Text;
-using System.Text.RegularExpressions;
 
 namespace UsefulExtentions
 {
@@ -54,7 +51,7 @@ namespace UsefulExtentions
             var random = new Random();
             var isbnArr = new string[count];
 
-            for(int i = 0; i < count; i++)
+            for (int i = 0; i < count; i++)
                 isbnArr[i] = $"9-785-5-{random.Next(1000, 9999)}-{random.Next(1000, 9999)}-{random.Next(0, 9)}";
 
             return isbnArr;
@@ -75,7 +72,7 @@ namespace UsefulExtentions
 
                 nameArr[j] = String.Join("", tempArr);
             }
-            
+
             return nameArr;
         }
 
@@ -95,7 +92,7 @@ namespace UsefulExtentions
         public static string[] GetRandomMount(int count)
         {
             var random = new Random();
-            var mount = new string[2]{"кбс", "скрепка"};
+            var mount = new string[2] { "кбс", "скрепка" };
             var tempArr = new string[count];
 
             for (int i = 0; i < count; i++)

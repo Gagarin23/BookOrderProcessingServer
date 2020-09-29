@@ -5,7 +5,6 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 [assembly: InternalsVisibleTo("ProcessingServerUnitTest")]
 namespace ProcessingServer
@@ -22,7 +21,7 @@ namespace ProcessingServer
 
                 while (true) Thread.Sleep(100000000);
                 {
-                    
+
                 }
             }
             catch (Exception e)
