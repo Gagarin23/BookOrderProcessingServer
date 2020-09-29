@@ -3,8 +3,13 @@ using System.Data;
 
 namespace UsefulExtentions
 {
-    public class Randomizer
+    public class DataTableTestStub
     {
+        /// <summary>
+        ///     Заглушка для генерации тех.задания.
+        /// </summary>
+        /// <param name="rowCount"></param>
+        /// <returns></returns>
         public static DataTable GetRandomOrder(int rowCount)
         {
             var table = new DataTable("RandomOrder");
@@ -46,7 +51,7 @@ namespace UsefulExtentions
         }
 
 
-        public static string[] GetRandomIsbn(int count)
+        static string[] GetRandomIsbn(int count)
         {
             var random = new Random();
             var isbnArr = new string[count];
@@ -57,7 +62,7 @@ namespace UsefulExtentions
             return isbnArr;
         }
 
-        public static string[] GetRandomName(int count, int lenght = 10)
+        static string[] GetRandomName(int count, int lenght = 10)
         {
             var random = new Random();
             var nameArr = new string[count];
@@ -76,7 +81,7 @@ namespace UsefulExtentions
             return nameArr;
         }
 
-        public static double[] GetRandomNumbers(int count)
+        static double[] GetRandomNumbers(int count)
         {
             var random = new Random();
             var numbersArr = new double[count];
@@ -89,10 +94,10 @@ namespace UsefulExtentions
             return numbersArr;
         }
 
-        public static string[] GetRandomMount(int count)
+        static string[] GetRandomMount(int count)
         {
             var random = new Random();
-            var mount = new string[2] { "кбс", "скрепка" };
+            var mount = new string[] { "кбс", "скрепка" };
             var tempArr = new string[count];
 
             for (int i = 0; i < count; i++)
@@ -103,10 +108,10 @@ namespace UsefulExtentions
             return tempArr;
         }
 
-        public static string[] GetRandomFormat(int count)
+        static string[] GetRandomFormat(int count)
         {
             var random = new Random();
-            var format = new string[2] { "А5", "А4" };
+            var format = new string[] { "А5", "А4" };
             var tempArr = new string[count];
 
             for (int i = 0; i < count; i++)
@@ -117,10 +122,10 @@ namespace UsefulExtentions
             return tempArr;
         }
 
-        public static string[] GetRandomLamination(int count)
+        static string[] GetRandomLamination(int count)
         {
             var random = new Random();
-            var lamination = new string[2] { "глянец", "матовый" };
+            var lamination = new string[] { "глянец", "матовый" };
             var tempArr = new string[count];
 
             for (int i = 0; i < count; i++)
@@ -131,7 +136,7 @@ namespace UsefulExtentions
             return tempArr;
         }
 
-        public static double[] GetRandomImposition(int count)
+        static double[] GetRandomImposition(int count)
         {
             var random = new Random();
             var tempArr = new double[count];

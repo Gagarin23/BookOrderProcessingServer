@@ -22,7 +22,7 @@ namespace ProcessingServerUnitTest
                 Lamination = 6,
                 Imposition = 7,
             };
-            var randomOrder = UsefulExtentions.Randomizer.GetRandomOrder(10);
+            var randomOrder = UsefulExtentions.DataTableTestStub.GetRandomOrder(10);
 
             //Act
             var bookOrder = new OzonCoverConstructor(excelParameters);
